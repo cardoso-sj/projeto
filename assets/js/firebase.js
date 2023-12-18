@@ -21,8 +21,6 @@ const dbref = ref(db);
 let RegisterForm = document.getElementById('RegisterForm');
 let LoginForm = document.getElementById('LoginForm');
 
-
-
 if (RegisterForm) {
     RegisterForm.addEventListener('submit', function (evt) {
         evt.preventDefault();
@@ -60,8 +58,6 @@ if (RegisterForm) {
                 }
             })
     });
-
-
 }
 
 if (LoginForm) {
@@ -84,7 +80,6 @@ if (LoginForm) {
                         //window.location.href = 'home.html';
                     };
                 })
-
             })
             .catch((error) => {
                 showAlert(error.message, "error");
