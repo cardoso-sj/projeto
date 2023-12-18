@@ -41,14 +41,13 @@ if (RegisterForm) {
                     email: email.value
                 })
 
-                showAlert("A sua Conta foi Criada com Sucesso!", "success");
+                showAlert("A sua conta foi criada com sucesso!", "success");
                 setTimeout(function () {
                     window.location.href = 'index.html';
                 }, 1000);
             })
             .catch((error) => {
                 var errorCode = error.code;
-                console.log(error.code);
                 if (errorCode === 'auth/email-already-in-use') {
                     showAlert("O email que introduziu já se encontra em uso", "error");
 
@@ -85,7 +84,6 @@ if (LoginForm) {
             })
             .catch((error) => {
             var errorCode = error.code;
-                console.log(error.code);
                 if (errorCode === 'auth/invalid-email') {
                     showAlert("Introduza um email válido", "error");
                     

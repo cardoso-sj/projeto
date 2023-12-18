@@ -14,7 +14,16 @@
 
 <body>
   <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    
     <div class="container">
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label"></span>
+      </div>
+      
       <div class="card login-card">
         <div class="row no-gutters">
           <div class="col-md-5">
@@ -39,15 +48,15 @@
                 </div>
                 <div class="form-group mb-2">
                   <label for="username" class="sr-only">Username</label>
-                  <input type="text" id="username" class="form-control" placeholder="Username">
+                  <input type="text" id="username" class="form-control" autocomplete="username" placeholder="Username">
                 </div>
                 <div class="form-group mb-2">
                   <label for="email" class="sr-only">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email address">
+                  <input type="email" id="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group mb-4">
                   <label for="password" class="sr-only">Password</label>
-                  <input type="password" id="password" class="form-control" placeholder="***********">
+                  <input type="password" id="password" class="form-control" autocomplete="current-password" placeholder="***********">
                 </div>
                 <input type="submit" class="btn btn-block login-btn mb-4" value="Register">
               </form>
@@ -71,6 +80,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Check for saved dark mode preference
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const savedDarkMode = localStorage.getItem('darkMode');
+
+    if (savedDarkMode) {
+      document.body.classList.toggle('dark-mode', savedDarkMode === 'true');
+      darkModeToggle.checked = savedDarkMode === 'true';
+    }
+
+    // Toggle dark mode on button click
+    darkModeToggle.addEventListener('change', () => {
+      const isDarkMode = darkModeToggle.checked;
+      document.body.classList.toggle('dark-mode', isDarkMode);
+      localStorage.setItem('darkMode', isDarkMode);
+    });
+  </script>
 </body>
 
 </html>
