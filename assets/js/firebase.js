@@ -87,9 +87,7 @@ if (LoginForm) {
 
             })
             .catch((error) => {
-                alert(error.message);
-                console.log(error.code);
-                console.log(error.message);
+                showAlert(error.message, "error");
             })
     });
 }
