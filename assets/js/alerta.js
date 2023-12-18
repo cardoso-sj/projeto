@@ -9,7 +9,7 @@ style.innerHTML = `
     padding: 20px;
     color: white;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     transition: opacity 0.5s ease;
     opacity: 0;
