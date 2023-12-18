@@ -50,11 +50,13 @@ if (RegisterForm) {
                 var errorCode = error.code;
                 console.log(error.code);
                 if (errorCode === 'auth/email-already-in-use') {
-                    //showErrorAlert("O email que introduziu já se encontra em uso!");
-                    showAlert("O email que introduziu já se encontra em uso!", "error");
+                    showAlert("O email que introduziu já se encontra em uso", "error");
+
                 } else if (errorCode === 'auth/weak-password') {
-                    //showErrorAlert("A password deve ter pelo menos 6 caracteres!");
-                    showAlert("A password deve ter pelo menos 6 caracteres!", "error");
+                    showAlert("A password deve ter pelo menos 6 caracteres", "error");
+
+                } else {
+                    showAlert(error.message, "error");
                 }
             })
     });
@@ -82,7 +84,17 @@ if (LoginForm) {
                 })
             })
             .catch((error) => {
-                showAlert(error.message, "error");
+            var errorCode = error.code;
+                console.log(error.code);
+                if (errorCode === 'auth/invalid-email') {
+                    showAlert("Introduza um email válido", "error");
+                    
+                } else if (errorCode === 'auth/invalid-credential') {
+                    showAlert("As suas credenciais não sao válidas", "error");
+
+                } else {
+                    showAlert(error.message, "error");
+                }
             })
     });
 }
