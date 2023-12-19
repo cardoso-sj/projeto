@@ -82,7 +82,7 @@ if (LoginForm) {
                             lastname: snapshot.val().lastname
                         }))
                         sessionStorage.setItem("user-creds", JSON.stringify(credentials.user));
-                        window.location.href = './dash/html/index.html';
+                        window.location.href = './admin/index.html';
                     };
                 })
             })
