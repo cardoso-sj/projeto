@@ -34,7 +34,7 @@ if (RegisterForm) {
         createUserWithEmailAndPassword(auth, email.value, password.value)
             .then((credentials) => {
                 console.log(credentials);
-                set(ref(db, 'Users/' + credentials.user.uid), {
+                set(ref(db, 'users/' + credentials.user.uid), {
                     firstname: firstname.value,
                     lastname: lastname.value,
                     username: username.value,
@@ -74,14 +74,15 @@ if (LoginForm) {
         signInWithEmailAndPassword(auth, email.value, password.value)
             .then((credentials) => {
                 console.log(credentials);
-                get(child(dbref, 'Users/' + credentials.user.uid)).then((snapshot) => {
+                get(child(dbref, 'users/' + credentials.user.uid)).then((snapshot) => {
                     if (snapshot.exists) {
                         sessionStorage.setItem("user-info", JSON.stringify({
+                            username: snapshot.val().username,
                             firstname: snapshot.val().firstname,
                             lastname: snapshot.val().lastname
                         }))
                         sessionStorage.setItem("user-creds", JSON.stringify(credentials.user));
-                        //window.location.href = 'home.html';
+                        window.location.href = './dash/html/index.html';
                     };
                 })
             })

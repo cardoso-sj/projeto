@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-
-<!-- =========================================================
-* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
-==============================================================
-
-* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
-* Created by: ThemeSelection
-* License: You must have a valid license purchased in order to legally use the theme for your project.
-* Copyright ThemeSelection (https://themeselection.com)
-
-=========================================================
- -->
-<!-- beautify ignore:start -->
 <html
   lang="en"
   class="light-style layout-menu-fixed"
@@ -194,7 +181,7 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="pages-account-settings-account.html" class="menu-link">
+                  <a href="account-settings.html" class="menu-link">
                     <div data-i18n="Account">Account</div>
                   </a>
                 </li>
@@ -524,8 +511,8 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
+                            <span class="fw-semibold d-block" id="name"></span>
+                            <small class="text-muted">User</small>
                           </div>
                         </div>
                       </a>
@@ -558,7 +545,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
+                      <a class="dropdown-item" type="button" id="signoutbutton">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -1164,7 +1151,7 @@
         >Upgrade to Pro</a
       >
     </div>
-
+    
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
@@ -1186,5 +1173,34 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+      let userCreds = JSON.parse(sessionStorage.getItem("user-creds"));
+      let userInfo = JSON.parse(sessionStorage.getItem("user-info"));
+
+      let name = document.getElementById('name');
+      let signoutBtn = document.getElementById('signoutbutton');
+
+      
+
+      let Signout = () => {
+        sessionStorage.removeItem("user-creds");
+        sessionStorage.removeItem("user-info");
+        window.location.href = '../../index.html';
+      }
+
+      let CheckCred = () => {
+        if(!sessionStorage.getItem("user-creds"))
+          window.location.href = '../../index.html';
+        else{
+          name.innerText = `${userInfo.firstname + " " + userInfo.lastname}`;
+        }
+      }
+
+      window.addEventListener('load', CheckCred);
+      signoutBtn.addEventListener('click', Signout);
+
+    </script>
+
   </body>
 </html>
