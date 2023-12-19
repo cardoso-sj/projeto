@@ -51,6 +51,9 @@ if (RegisterForm) {
                 if (errorCode === 'auth/email-already-in-use') {
                     showAlert("O email que introduziu já se encontra em uso", "error");
 
+                } else if (errorCode === 'auth/invalid-email') {
+                    showAlert("Introduza um email válido", "error");
+                    
                 } else if (errorCode === 'auth/weak-password') {
                     showAlert("A password deve ter pelo menos 6 caracteres", "error");
 

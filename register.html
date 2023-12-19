@@ -14,20 +14,11 @@
 
 <body>
   <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
-    
     <div class="container">
-      <div class="toggle-container">
-        <label class="switch">
-          <input type="checkbox" id="darkModeToggle">
-          <span class="slider round"></span>
-        </label>
-        <span class="toggle-label"></span>
-      </div>
-      
       <div class="card login-card">
         <div class="row no-gutters">
           <div class="col-md-5">
-            <img src="assets/images/login1.jpeg" alt="login" class="login-card-img">
+            <img src="assets/images/login.jpeg" alt="login" class="login-card-img">
           </div>
           <div class="col-md-7">
             <div class="card-body">
@@ -72,14 +63,18 @@
           </div>
         </div>
       </div>
-
     </div>
+    <label class="switch-container">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider"></span>
+    </label>
   </main>
   <script type="module" src="/assets/js/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
   <script>
     // Check for saved dark mode preference

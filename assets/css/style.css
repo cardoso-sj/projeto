@@ -1,20 +1,21 @@
 :root {
-  --background-light: #d0d0ce;
-  --background-dark: #222;
+  --background-light: #dee0e0e0;
+  --background-dark: #1d353a;
   --text-light: #000;
   --text-dark: #fff;
   --card-bg-light: #fff;
-  --card-bg-dark: #333;
-  --card-shadow-light: rgba(172, 168, 168, 0.43);
-  --card-shadow-dark: rgba(0, 0, 0, 0.43);
-  --form-border-light: #d5dae2;
-  --form-border-dark: #555;
+  --card-bg-dark: #1d353a71;
+  --card-shadow-light: rgba(70, 164, 153, 0.50);
+  --card-shadow-dark: rgba(70, 164, 153, 0.50);
+  --form-border-light: #95aca7;
+  --form-border-dark: #677673;
   --placeholder-color: #919aa3;
-  --button-bg: #000;
+  --placeholder-color-dark: #cbd0d4;
+  --button-bg: #42bb95;
   --button-text: #fff;
   --button-hover-bg: transparent;
-  --button-hover-text: #000;
-  --link-color: #0d2366;
+  --button-hover-text: #42bb95;
+  --link-color: #389477;
 }
 
 body {
@@ -41,7 +42,7 @@ body.dark-mode {
 .login-card {
   border: 0;
   border-radius: 27.5px;
-  box-shadow: 0 10px 30px 0 var(--card-shadow-light);
+  box-shadow: 0 0 80px 20px var(--card-shadow-light);
   overflow: hidden;
   background-color: var(--card-bg-light);
   color: var(--text-light);
@@ -49,7 +50,7 @@ body.dark-mode {
 }
 
 body.dark-mode .login-card {
-  box-shadow: 0 10px 30px 0 var(--card-shadow-dark);
+  box-shadow: 0 0 80px 20px var(--card-shadow-dark);
   background-color: var(--card-bg-dark);
   color: var(--text-dark);
 }
@@ -86,9 +87,11 @@ body.dark-mode .login-card-description{
   font-weight: normal;
   margin-bottom: 23px;
 }
+
 .login-card .form-control {
   border-radius: 15px;
   border: 2px solid var(--form-border-light);
+  
   padding: 15px 25px;
   margin-bottom: 20px;
   min-height: 45px;
@@ -96,9 +99,12 @@ body.dark-mode .login-card-description{
   line-height: 15;
   font-weight: normal;
 }
-
+login-card .form-control:focus {
+  box-shadow: 0 0 10px #42bb95;
+}
 body.dark-mode .login-card .form-control {
   background-color: solid var(--form-border-dark);
+  color: var(--text-dark);
   border-radius: 15px;
   border: 2px solid var(--form-border-dark);
   padding: 15px 25px;
@@ -107,6 +113,10 @@ body.dark-mode .login-card .form-control {
   font-size: 13px;
   line-height: 15;
   font-weight: normal;
+}
+
+body.dark-mode .login-card .form-control:focus {
+  box-shadow: 0 0 10px #42bb95;
 }
 
 .login-card .form-control::-webkit-input-placeholder {
@@ -152,6 +162,12 @@ body.dark-mode .login-card .form-control {
   margin-bottom: 12px;
 }
 
+body.dark-mode .login-card .forgot-password-link {
+  font-size: 14px;
+  color: var(--placeholder-color-dark);
+  margin-bottom: 12px;
+}
+
 .login-card-footer-text {
   font-size: 16px;
   color: var(--link-color);
@@ -167,6 +183,10 @@ body.dark-mode .login-card .form-control {
 .login-card-footer-nav a {
   font-size: 14px;
   color: var(--placeholder-color);
+}
+body.dark-mode .login-card-footer-nav a {
+  font-size: 14px;
+  color: var(--placeholder-color-dark);
 }
 
 /*# sourceMappingURL=login.css.map */
@@ -221,12 +241,13 @@ body.dark-mode .login-card .form-control {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #42bb95;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 4px #42bb95;
 }
+
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -234,17 +255,102 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+body.dark-mode input[type='text']:focus {
+  outline: none;
+  border-color: #42bb95;
+  
 }
 
-.slider.round:before {
+body.dark-mode input[type='email']:focus {
+  outline: none;
+  border-color: #42bb95;
+  box-shadow: 0 0 10px #42bb95;
+}
+
+body.dark-mode input[type='password']:focus {
+  outline: none;
+  border-color: #42bb95;
+  box-shadow: 0 0 10px #42bb95;
+}
+
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #42bb95;
+  
+}
+
+input[type='email']:focus {
+  outline: none;
+  border-color: #42bb95;
+  box-shadow: 0 0 10px #42bb95;
+}
+
+input[type='password']:focus {
+  outline: none;
+  border-color: #42bb95;
+  box-shadow: 0 0 10px #42bb95;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   transition: background-color 5000s ease-in-out 0s;
+   background-color: #fff !important;
+   color: #e4d8d8 !important;
+   
+}
+
+/* The switch - the box around the slider */
+.switch-container {
+  position: fixed;
+  width: 3.5em;
+  height: 2em;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch-container .slider {
+  --background: linear-gradient(to right, #090613ef, #18151f);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  transition: background-color 0.5s;
+  border-radius: 30px;
+}
+
+.switch-container .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
   border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 15px -4px 0px 15px #f8ea27;
+  background: var(--background);
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.toggle-label {
-  margin-left: 10px;
-  font-size: 16px;
-  color: var(--text-light);
+.switch-container input:checked + .slider {
+  background-color: #000;
+}
+
+.switch-container input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 8px -4px 0px 0px #f8f8f4;
 }
