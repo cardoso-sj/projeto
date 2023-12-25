@@ -50,6 +50,7 @@ const handleRegistration = async (evt) => {
         }, 1000);
     } catch (error) {
         handleRegistrationError(error);
+        console.error(error);
     }
 };
 
@@ -77,6 +78,7 @@ const handleLogin = async (evt) => {
         }
     } catch (error) {
         handleLoginError(error);
+        console.error(error);
     }
 };
 
