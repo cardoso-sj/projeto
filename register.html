@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>APP | Register</title>
-  <link href='https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.3.67/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -69,7 +71,7 @@
       <span class="slider"></span>
     </label>
   </main>
-  <script type="module" src="/assets/js/firebase.js"></script>
+  <script src="/assets/js/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
@@ -77,20 +79,23 @@
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
   <script>
-    // Check for saved dark mode preference
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const savedDarkMode = localStorage.getItem('darkMode');
+    document.addEventListener('DOMContentLoaded', () => {
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      const savedDarkMode = localStorage.getItem('darkMode');
 
-    if (savedDarkMode) {
-      document.body.classList.toggle('dark-mode', savedDarkMode === 'true');
-      darkModeToggle.checked = savedDarkMode === 'true';
-    }
+      const setDarkMode = (isDarkMode) => {
+        document.body.classList.toggle('dark-mode', isDarkMode);
+        localStorage.setItem('darkMode', isDarkMode);
+        darkModeToggle.checked = isDarkMode;
+      };
 
-    // Toggle dark mode on button click
-    darkModeToggle.addEventListener('change', () => {
-      const isDarkMode = darkModeToggle.checked;
-      document.body.classList.toggle('dark-mode', isDarkMode);
-      localStorage.setItem('darkMode', isDarkMode);
+      if (savedDarkMode) {
+        setDarkMode(savedDarkMode === 'true');
+      }
+
+      darkModeToggle.addEventListener('change', () => {
+        setDarkMode(darkModeToggle.checked);
+      });
     });
   </script>
 </body>
