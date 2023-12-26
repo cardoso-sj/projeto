@@ -1,356 +1,350 @@
 :root {
-  --background-light: #dee0e0e0;
-  --background-dark: #1d353a;
-  --text-light: #000;
-  --text-dark: #fff;
-  --card-bg-light: #fff;
-  --card-bg-dark: #1d353a71;
-  --card-shadow-light: rgba(70, 164, 153, 0.50);
-  --card-shadow-dark: rgba(70, 164, 153, 0.50);
-  --form-border-light: #95aca7;
-  --form-border-dark: #677673;
-  --placeholder-color: #919aa3;
-  --placeholder-color-dark: #cbd0d4;
-  --button-bg: #42bb95;
-  --button-text: #fff;
-  --button-hover-bg: transparent;
-  --button-hover-text: #42bb95;
-  --link-color: #389477;
+    --background-light: #dee0e0e0;
+    --background-dark: #1d353a;
+    --text-light: #000;
+    --text-dark: #fff;
+    --card-bg-light: #fff;
+    --card-bg-dark: #1d353a71;
+    --card-shadow-light: rgba(70, 164, 153, 0.5);
+    --card-shadow-dark: rgba(70, 164, 153, 0.5);
+    --form-border-light: #95aca7;
+    --form-border-dark: #677673;
+    --placeholder-color: #919aa3;
+    --placeholder-color-dark: #cbd0d4;
+    --button-bg: #42bb95;
+    --button-text: #fff;
+    --button-hover-bg: transparent;
+    --button-hover-text: #42bb95;
+    --link-color: #389477;
 }
 
 body {
-  font-family: 'Poppins';
-  background-color: var(--background-light);
-  min-height: 100vh;
-  color: var(--text-light);
-  transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Poppins";
+    background-color: var(--background-light);
+    min-height: 100vh;
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode {
-  background-color: var(--background-dark);
-  color: var(--text-dark);
+    background-color: var(--background-dark);
+    color: var(--text-dark);
 }
 
 .brand-wrapper {
-  margin-bottom: 19px;
+    margin-bottom: 19px;
 }
 
 .brand-wrapper .logo {
-  height: 37px;
+    height: 60px;
 }
 
 .login-card {
-  border: 0;
-  border-radius: 27.5px;
-  box-shadow: 0 0 80px 20px var(--card-shadow-light);
-  overflow: hidden;
-  background-color: var(--card-bg-light);
-  color: var(--text-light);
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 0 80px 20px var(--card-shadow-light);
+    overflow: hidden;
+    background-color: var(--card-bg-light);
+    color: var(--text-light);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode .login-card {
-  box-shadow: 0 0 80px 20px var(--card-shadow-dark);
-  background-color: var(--card-bg-dark);
-  color: var(--text-dark);
+    box-shadow: 0 0 80px 20px var(--card-shadow-dark);
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
 }
 
 .login-card-img {
-  border-radius: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .login-card .card-body {
-  padding: 85px 60px 60px;
+    padding: 85px 60px 60px;
 }
 
 @media (max-width: 422px) {
-  .login-card .card-body {
-    padding: 35px 24px;
-  }
+    .login-card .card-body {
+        padding: 35px 24px;
+    }
 }
 
 .login-card-description {
-  font-size: 25px;
-  color: var(--text-light);
-  font-weight: normal;
-  margin-bottom: 23px;
+    font-size: 25px;
+    color: var(--text-light);
+    font-weight: normal;
+    margin-bottom: 23px;
 }
 
-body.dark-mode .login-card-description{
-  font-size: 25px;
-  color: var(--text-dark);
-  font-weight: normal;
-  margin-bottom: 23px;
+body.dark-mode .login-card-description {
+    font-size: 25px;
+    color: var(--text-dark);
+    font-weight: normal;
+    margin-bottom: 23px;
 }
 
 .login-card .form-control {
-  border-radius: 15px;
-  border: 2px solid var(--form-border-light);
-  
-  padding: 15px 25px;
-  margin-bottom: 20px;
-  min-height: 45px;
-  font-size: 13px;
-  line-height: 15;
-  font-weight: normal;
+    border-radius: 15px;
+    border: 2px solid var(--form-border-light);
+
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal;
 }
 login-card .form-control:focus {
-  box-shadow: 0 0 10px #42bb95;
+    box-shadow: 0 0 10px #42bb95;
 }
 body.dark-mode .login-card .form-control {
-  background-color: solid var(--form-border-dark);
-  color: var(--text-dark);
-  border-radius: 15px;
-  border: 2px solid var(--form-border-dark);
-  padding: 15px 25px;
-  margin-bottom: 20px;
-  min-height: 45px;
-  font-size: 13px;
-  line-height: 15;
-  font-weight: normal;
+    background-color: solid var(--form-border-dark);
+    color: var(--text-dark);
+    border-radius: 15px;
+    border: 2px solid var(--form-border-dark);
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal;
 }
 
 body.dark-mode .login-card .form-control:focus {
-  box-shadow: 0 0 10px #42bb95;
+    box-shadow: 0 0 10px #42bb95;
 }
 
 .login-card .form-control::-webkit-input-placeholder {
-  color: var(--placeholder-color);
+    color: var(--placeholder-color);
 }
 
 .login-card .form-control::-moz-placeholder {
-  color: var(--placeholder-color);
+    color: var(--placeholder-color);
 }
 
 .login-card .form-control:-ms-input-placeholder {
-  color: var(--placeholder-color);
+    color: var(--placeholder-color);
 }
 
 .login-card .form-control::-ms-input-placeholder {
-  color: var(--placeholder-color);
+    color: var(--placeholder-color);
 }
 
 .login-card .form-control::placeholder {
-  color: var(--placeholder-color);
+    color: var(--placeholder-color);
 }
 
 .login-card .login-btn {
-  padding: 13px 20px 12px;
-  background-color: var(--button-bg);
-  border-radius: 15px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  color: var(--button-text);
-  margin-bottom: 24px;
+    padding: 13px 20px 12px;
+    background-color: var(--button-bg);
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--button-text);
+    margin-bottom: 24px;
 }
 
 .login-card .login-btn:hover {
-  border: 1px solid var(--button-hover-text);
-  background-color: var(--button-hover-bg);
-  color: var(--button-hover-text);
+    border: 1px solid var(--button-hover-text);
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
 }
 
 .login-card .forgot-password-link {
-  font-size: 14px;
-  color: var(--placeholder-color);
-  margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--placeholder-color);
+    margin-bottom: 12px;
 }
 
 body.dark-mode .login-card .forgot-password-link {
-  font-size: 14px;
-  color: var(--placeholder-color-dark);
-  margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--placeholder-color-dark);
+    margin-bottom: 12px;
 }
 
 .login-card-footer-text {
-  font-size: 16px;
-  color: var(--link-color);
-  margin-bottom: 60px;
+    font-size: 16px;
+    color: var(--link-color);
+    margin-bottom: 60px;
 }
 
 @media (max-width: 767px) {
-  .login-card-footer-text {
-    margin-bottom: 24px;
-  }
+    .login-card-footer-text {
+        margin-bottom: 24px;
+    }
 }
 
 .login-card-footer-nav a {
-  font-size: 14px;
-  color: var(--placeholder-color);
+    font-size: 14px;
+    color: var(--placeholder-color);
 }
 body.dark-mode .login-card-footer-nav a {
-  font-size: 14px;
-  color: var(--placeholder-color-dark);
+    font-size: 14px;
+    color: var(--placeholder-color-dark);
 }
 
 /*# sourceMappingURL=login.css.map */
 .form-group {
-  margin-bottom: 0rem !important;
+    margin-bottom: 0rem !important;
 }
 
 /* Add this to your existing CSS */
 .toggle-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #42bb95;
+    background-color: #42bb95;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 4px #42bb95;
+    box-shadow: 0 0 4px #42bb95;
 }
-
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
-body.dark-mode input[type='text']:focus {
-  outline: none;
-  border-color: #42bb95;
-  
+body.dark-mode input[type="text"]:focus {
+    outline: none;
+    border-color: #42bb95;
 }
 
-body.dark-mode input[type='email']:focus {
-  outline: none;
-  border-color: #42bb95;
-  box-shadow: 0 0 10px #42bb95;
+body.dark-mode input[type="email"]:focus {
+    outline: none;
+    border-color: #42bb95;
+    box-shadow: 0 0 10px #42bb95;
 }
 
-body.dark-mode input[type='password']:focus {
-  outline: none;
-  border-color: #42bb95;
-  box-shadow: 0 0 10px #42bb95;
+body.dark-mode input[type="password"]:focus {
+    outline: none;
+    border-color: #42bb95;
+    box-shadow: 0 0 10px #42bb95;
 }
 
-
-input[type='text']:focus {
-  outline: none;
-  border-color: #42bb95;
-  
+input[type="text"]:focus {
+    outline: none;
+    border-color: #42bb95;
 }
 
-input[type='email']:focus {
-  outline: none;
-  border-color: #42bb95;
-  box-shadow: 0 0 10px #42bb95;
+input[type="email"]:focus {
+    outline: none;
+    border-color: #42bb95;
+    box-shadow: 0 0 10px #42bb95;
 }
 
-input[type='password']:focus {
-  outline: none;
-  border-color: #42bb95;
-  box-shadow: 0 0 10px #42bb95;
+input[type="password"]:focus {
+    outline: none;
+    border-color: #42bb95;
+    box-shadow: 0 0 10px #42bb95;
 }
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-   transition: background-color 5000s ease-in-out 0s;
-   background-color: #fff !important;
-   color: #e4d8d8 !important;
-   
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: #fff !important;
+    color: #e4d8d8 !important;
 }
 
 /* The switch - the box around the slider */
 .switch-container {
-  position: fixed;
-  width: 3.5em;
-  height: 2em;
-  bottom: 10px;
-  right: 10px;
+    position: fixed;
+    width: 3.5em;
+    height: 2em;
+    bottom: 10px;
+    right: 10px;
 }
 
 /* Hide default HTML checkbox */
 .switch-container input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 /* The slider */
 .switch-container .slider {
-  --background: linear-gradient(to right, #090613ef, #18151f);
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--background);
-  transition: background-color 0.5s;
-  border-radius: 30px;
+    --background: linear-gradient(to right, #090613ef, #18151f);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background);
+    transition: background-color 0.5s;
+    border-radius: 30px;
 }
 
 .switch-container .slider:before {
-  position: absolute;
-  content: "";
-  height: 1.4em;
-  width: 1.4em;
-  border-radius: 50%;
-  left: 10%;
-  bottom: 15%;
-  box-shadow: inset 15px -4px 0px 15px #f8ea27;
-  background: var(--background);
-  transition: transform 0.5s, box-shadow 0.5s;
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 15px -4px 0px 15px #f8ea27;
+    background: var(--background);
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .switch-container input:checked + .slider {
-  background-color: #000;
+    background-color: #000;
 }
 
 .switch-container input:checked + .slider:before {
-  transform: translateX(100%);
-  box-shadow: inset 8px -4px 0px 0px #f8f8f4;
+    transform: translateX(100%);
+    box-shadow: inset 8px -4px 0px 0px #f8f8f4;
 }
