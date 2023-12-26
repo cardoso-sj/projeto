@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 303.74 55.45">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .1em;
+      }
+
+      .cls-2 {
+        letter-spacing: .1em;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-10 {
+        letter-spacing: .18em;
+      }
+
+      .cls-11 {
+        letter-spacing: .17em;
+      }
+
+      .cls-12 {
+        letter-spacing: .08em;
+      }
+
+      .cls-13 {
+        letter-spacing: .08em;
+      }
+
+      .cls-14 {
+        letter-spacing: .2em;
+      }
+
+      .cls-15 {
+        letter-spacing: .2em;
+      }
+
+      .cls-16 {
+        letter-spacing: .2em;
+      }
+
+      .cls-17 {
+        letter-spacing: .06em;
+      }
+
+      .cls-18 {
+        letter-spacing: .02em;
+      }
+
+      .cls-19 {
+        fill: #f15e22;
+        font-family: Lato-Regular, Lato;
+        font-size: 6.83px;
+      }
+
+      .cls-20 {
+        fill: #00957f;
+        font-family: LeagueSpartan-Bold, 'League Spartan';
+        font-size: 18.4px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-21 {
+        letter-spacing: .19em;
+      }
+
+      .cls-22 {
+        letter-spacing: .19em;
+      }
+
+      .cls-23 {
+        letter-spacing: .19em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="13.88" y1="47.91" x2="13.88" y2="33.35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0522b"/>
+      <stop offset="1" stop-color="#f05269"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="24.75" y1="51.52" x2="24.75" y2="34.17" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="35.61" y1="50.69" x2="35.61" y2="26.83" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-8.54" y1="26.12" x2="27.37" y2="26.12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#f5f6f7"/>
+      <stop offset=".26" stop-color="#dadee1"/>
+      <stop offset=".46" stop-color="#afb8be"/>
+      <stop offset=".71" stop-color="#74838e"/>
+      <stop offset=".88" stop-color="#475b69"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="27.73" y1="0" x2="27.73" y2="55.45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00ae8e"/>
+      <stop offset="1" stop-color="#4c6168"/>
+      <stop offset="1" stop-color="#2e383f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="43.73" y1="17.36" x2="29.2" y2="17.36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#475b69"/>
+      <stop offset=".12" stop-color="#4c5f6d"/>
+      <stop offset=".27" stop-color="#5c6d79"/>
+      <stop offset=".44" stop-color="#76848d"/>
+      <stop offset=".63" stop-color="#9ba3aa"/>
+      <stop offset=".82" stop-color="#cacbce"/>
+      <stop offset=".83" stop-color="#cecfd1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="47.16" y1="33.3" x2="40.55" y2="45.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#008f77"/>
+      <stop offset="1" stop-color="#005958"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon class="cls-3" points="11.37 32.4 10.24 33.53 10.24 43.89 17.53 43.89 17.53 38.55 11.37 32.4"/>
+    <polygon class="cls-5" points="21.1 40.33 21.1 46.73 28.39 46.73 28.39 33.04 21.1 40.33"/>
+    <polygon class="cls-6" points="36.16 25.27 31.96 29.47 31.96 44.1 39.25 44.1 39.25 28.36 36.16 25.27"/>
+    <polygon class="cls-4" points="5.15 33.94 2.23 31.01 11.37 21.87 20.2 30.7 35.22 15.69 38.14 18.61 20.2 36.55 11.37 27.72 5.15 33.94"/>
+    <path class="cls-8" d="M45.49,37.61c2.41-3.87,3.78-8.45,3.71-13.35C49.02,10.95,38.13.12,24.82,0,11.06-.12-.12,11.06,0,24.82c.12,13.31,10.96,24.2,24.27,24.38,4.91.07,9.5-1.31,13.36-3.73l8.35,8.35c2.17,2.17,5.69,2.17,7.86,0h0c2.17-2.17,2.17-5.69,0-7.86l-8.35-8.35ZM24.98,44.49c-11.28.21-20.47-8.98-20.26-20.26.2-10.63,8.87-19.31,19.51-19.51,11.28-.21,20.47,8.98,20.26,20.26-.2,10.63-8.87,19.31-19.51,19.51Z"/>
+    <polygon class="cls-9" points="29.2 13.63 40.2 24.62 43.73 10.09 29.2 13.63"/>
+    <path class="cls-7" d="M45.45,37.66c-1.98,3.13-4.64,5.8-7.77,7.78-.02.01-.03.03-.05.04,1.09,1.09,2.19,2.19,3.28,3.28,2.65-2.77,4.67-6.16,5.8-9.92l-1.22-1.22s-.03.03-.04.05Z"/>
+  </g>
+  <g>
+    <text class="cls-20" transform="translate(61.26 27.77)"><tspan class="cls-1" x="0" y="0">SMA</tspan><tspan class="cls-17" x="49.72" y="0">R</tspan><tspan class="cls-2" x="63.99" y="0">T</tspan><tspan class="cls-13" x="76.8" y="0"> </tspan><tspan class="cls-1" x="83.3" y="0">S</tspan><tspan class="cls-18" x="97.5" y="0">A</tspan><tspan class="cls-1" x="112.2" y="0">VIN</tspan><tspan class="cls-12" x="153.01" y="0">G</tspan><tspan class="cls-1" x="169.74" y="0">S</tspan></text>
+    <text class="cls-19" transform="translate(60.84 42.64)"><tspan class="cls-16" x="0" y="0">POUPE </tspan><tspan class="cls-22" x="32.58" y="0">C</tspan><tspan class="cls-14" x="38.42" y="0">OM </tspan><tspan class="cls-21" x="56.07" y="0">S</tspan><tspan class="cls-15" x="61.05" y="0">ABEDORIA,</tspan><tspan class="cls-11" x="109.36" y="0"> </tspan><tspan class="cls-14" x="112.25" y="0">A</tspan><tspan class="cls-11" x="118.24" y="0">L</tspan><tspan class="cls-14" x="122.88" y="0">CANCE OS SEUS O</tspan><tspan class="cls-23" x="202.54" y="0">B</tspan><tspan class="cls-14" x="208.27" y="0">JETI</tspan><tspan class="cls-10" x="226.51" y="0">V</tspan><tspan class="cls-14" x="232.36" y="0">OS</tspan></text>
+  </g>
+</svg>

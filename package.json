@@ -1,19 +1,15 @@
 {
-    "name": "bd-login-free",
+    "name": "smart-savings",
     "version": "1.0.0",
-    "description": "",
+    "description": "App de Finanças",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node index.js"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "Smart Saving Devs",
+    "license": "MIT",
     "devDependencies": {
-        "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^7.0.1",
-        "gulp-sass": "^4.0.2",
-        "gulp-sourcemaps": "^2.6.5",
-        "node-sass": "^4.13.0"
+        "gulp-sass": "^4.0.2"
     }
 }

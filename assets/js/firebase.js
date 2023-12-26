@@ -4,13 +4,13 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import { showAlert } from "./alerta.js"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAKhY7Xhb4QrjC8Vbb9lRgXceMjThM8Oj8",
-    authDomain: "sam-app-dfd5a.firebaseapp.com",
-    databaseURL: "https://sam-app-dfd5a-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "sam-app-dfd5a",
-    storageBucket: "sam-app-dfd5a.appspot.com",
-    messagingSenderId: "833856297629",
-    appId: "1:833856297629:web:250de3b7fc3847b9cc5274",
+    apiKey: "AIzaSyBB1p7R2VHpcdcaql9UWEf_qzzeMQ4koGE",
+    authDomain: "smart-savings-a369a.firebaseapp.com",
+    databaseURL: "https://smart-savings-a369a-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "smart-savings-a369a",
+    storageBucket: "smart-savings-a369a.appspot.com",
+    messagingSenderId: "646945260742",
+    appId: "1:646945260742:web:1ed62af60e1b85ad9ac3c7",
 }
 
 // Initialize Firebase
